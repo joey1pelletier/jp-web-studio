@@ -213,8 +213,8 @@ p {
 }
 
 .reg-section {
-    padding-top: 8.75em;
-    padding-bottom: 8.75em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .tagline-text {
@@ -313,6 +313,11 @@ p {
 
     .impactful-para-and-cta a {
         width: auto;
+    }
+
+    .reg-section {
+        padding-top: 8.75em;
+        padding-bottom: 8.75em;
     }
 
 
