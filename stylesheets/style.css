@@ -255,6 +255,16 @@ p {
     gap: 1em;
 }
 
+.heading-with-tagline-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: right;
+}
+
+.heading-description {
+    padding-top: 1em;
+}
 
 .impactful-para-and-cta {
     display: flex;
@@ -387,7 +397,7 @@ p {
     .all-features-container {
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: 2.5em;
         padding-top: 5em;
         padding-bottom: 5em;
     }
