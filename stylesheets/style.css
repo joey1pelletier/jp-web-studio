@@ -305,6 +305,14 @@ p {
     padding-bottom: 3em;
 }
 
+.all-projects {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
 .feature-container {
     display: flex;
     flex-direction: column;
@@ -315,6 +323,38 @@ p {
     padding-bottom: 1.75em;
     padding-left: 8vw;
     padding-right: 8vw;
+}
+
+.project-container-right img {
+    width: 60vw;
+}
+
+.project-container-left img {
+    width: 60vw;
+}
+
+.project-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 @media (min-width: 950px) {
