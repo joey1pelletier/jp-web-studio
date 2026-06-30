@@ -206,6 +206,15 @@ h2 {
     font-size: 1.75em;
 }
 
+h3 {
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 10%;
+    line-height: 1.5;
+    font-size: 1.25em;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
     font-weight: 100;
@@ -215,6 +224,21 @@ p {
 .reg-section {
     padding-top: 5em;
     padding-bottom: 5em;
+}
+
+.reg-centered-section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tagline-text p {
+    margin-top: 1em;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .tagline-text {
@@ -228,6 +252,10 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.heading-description {
+    
 }
 
 .impactful-para-and-cta {
@@ -257,6 +285,28 @@ p {
     display: flex;
     gap: 3em;
     align-items: center;
+}
+
+.icon-svg {
+    height: 42px;
+    width: 42px;
+}
+
+.all-features-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 @media (min-width: 950px) {
@@ -320,6 +370,35 @@ p {
         padding-bottom: 8.75em;
     }
 
+    .heading-description {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .features-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .feature-container {
+        padding: 0;
+        width: 20vw;
+    }
+
+    .all-features-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .reg-centered-section a {
+        width: fit-content;
+        align-self: center;
+    }
+    
 
 }
 
