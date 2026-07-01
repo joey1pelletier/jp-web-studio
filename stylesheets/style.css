@@ -45,7 +45,28 @@ a {
     white-space: nowrap;
 }
 
+.link-centered-button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0.75em 2.5em 0.75em 2.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
 .link-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.link-centered-button:hover {
     background-color: white;
     color: black;
 }
@@ -91,7 +112,7 @@ a {
 }
 
 .hero-background {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.80) 95%, rgba(0, 0, 0, 1) 100%), url('../images/hero-img.JPG');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 95%, rgba(0, 0, 0, 1) 100%), url('../images/hero-img.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,11 +141,11 @@ a {
 }
 
 .header-nav.is-open {
-    background-color: #000000;
+    background-color: #040404;
 }
 
 .header-nav.scrolled {
-    background-color: #000000;
+    background-color: #040404;
 }
 
 
@@ -306,11 +327,11 @@ p {
 }
 
 .all-projects {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 4em;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 3.5em;
 }
 
 .feature-container {
@@ -354,7 +375,28 @@ p {
 .project-info {
     display: flex;
     flex-direction: column;
+    gap: 1.5em;
+}
+
+.project-info a {
+    width: min-content;
+}
+
+.all-processes-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.process-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 @media (min-width: 950px) {
@@ -429,12 +471,32 @@ p {
         justify-content: space-around;
     }
 
+    .process-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     .feature-container {
         padding: 0;
         width: 20vw;
     }
 
+    .process-container {
+        padding: 0;
+        width: 16vw;
+        justify-content: flex-start;
+    }
+
     .all-features-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .all-processes-container {
         display: flex;
         flex-direction: column;
         gap: 2.5em;
@@ -446,7 +508,35 @@ p {
         width: fit-content;
         align-self: center;
     }
+
+    .all-projects {
+        gap: 4em;
+    }
     
+    .project-container-right img {
+        width: 30vw;
+    }
+    
+    .project-container-left img {
+        width: 30vw;
+    }
+
+    .project-container-right {
+        flex-direction: row;
+        gap: 6em;
+    }
+
+    .project-container-left {
+        flex-direction: row-reverse;
+        gap: 6em;
+    }
+
+
+    .link-centered-button {
+        width: min-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
