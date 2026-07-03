@@ -399,6 +399,103 @@ p {
     padding-right: 8vw;
 }
 
+.info-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.info-description {
+    display:flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.img-container img {
+    width: 50vw;
+}
+
+.mission-together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url('../images/IMG_3010.jpg');
+    background-position: center;     
+  background-repeat: no-repeat;    
+  background-size: cover; 
+}
+
+.heading-and-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-cta .link-button {
+    width: min-content;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.links-groups {
+    display: flex;
+    gap: 1em;
+}
+
+.links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer-heading {
+    font-size: 1.25em;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+
+
+
 @media (min-width: 950px) {
 
     h1 {
@@ -538,6 +635,49 @@ p {
         margin-right: auto;
     }
 
+    .info-img-container {
+        flex-direction: row-reverse;
+        gap:12em;
+    }
+
+    .img-container img {
+        width: 30vw;
+    }
+
+    .info-description a {
+        width: fit-content;
+    }
+
+    .heading-and-cta a {
+        width: min-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        gap: 6em;
+    }
+    
+    .footer-cta {
+        width: 40vw;
+    }
+    
+    .footer-links {
+        width: 20vw;
+    }
+    
+    .footer-contact-info {
+        width: 20vw;
+        
+        gap: 1em;
+    }
 }
 
 @media (max-width: 950px) {
