@@ -10,6 +10,27 @@ body {
     background-color: #040404;
 }
 
+.skip-link {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    top: -5em;
+
+}
+
+.skip-link:focus {
+    transform: translateY(100%);
+    top: -2em;
+    left: 1em;
+  }
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 0.25em;
+}
+
 section {
     padding-left: 7vw;
     padding-right: 7vw;
@@ -137,6 +158,22 @@ a {
     isolation: isolate;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.header-nav-subpage {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    isolation: isolate;
+    background-color: #040404;
     align-items: center;
 }
 
@@ -331,7 +368,7 @@ p {
     padding-bottom: 4em;
     display: flex;
     flex-direction: column;
-    gap: 3.5em;
+    gap: 5em;
 }
 
 .feature-container {
@@ -403,8 +440,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding-top: 3em;
-    padding-bottom: 3em;
 }
 
 .info-description {
@@ -492,6 +527,42 @@ p {
     gap: 2em;
 }
 
+.sub-page-heading {
+    margin-top: 6em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url('../images/hero-image.JPG');
+    background-position: center;     
+  background-repeat: no-repeat;    
+  background-size: cover; 
+}
+
+.sub-page-heading h1 {
+    margin-top: 0.3em;
+}
+
+.centered-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.reg-subpage-section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.reg-subpage-center-section {
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+}
+
+
+
 
 
 
@@ -527,6 +598,11 @@ p {
     }
 
     .header-nav {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .header-nav-subpage {
         padding-left: 10vw;
         padding-right: 10vw;
     }
@@ -607,7 +683,8 @@ p {
     }
 
     .all-projects {
-        gap: 4em;
+        gap: 6em;
+        padding-bottom: 6em;
     }
     
     .project-container-right img {
@@ -677,6 +754,10 @@ p {
         width: 20vw;
         
         gap: 1em;
+    }
+
+    .sub-page-heading {
+        margin-top: 7.5em;
     }
 }
 
