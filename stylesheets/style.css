@@ -19,11 +19,27 @@ body {
 
 }
 
+.subpage-skip-link {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    top: -5em;
+    z-index: 99999;
+
+}
+
 .skip-link:focus {
     transform: translateY(100%);
     top: -2em;
     left: 1em;
   }
+
+.subpage-skip-link:focus {
+    transform: translateY(100%);
+    top: -2em;
+    left: 1em;
+}
 
 .underline {
     text-decoration: underline;
@@ -553,6 +569,7 @@ p {
 
 .reg-subpage-center-section {
     padding-top: 5em;
+    padding-bottom: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
