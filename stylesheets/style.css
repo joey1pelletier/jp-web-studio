@@ -68,6 +68,26 @@ a {
     font-size: 1em;
 }
 
+ul {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+li {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    padding-left: 1em;
+    list-style-position: outside;
+}
+
 .link-button {
     font-family: 'Nunito', sans-serif;
     font-weight: 100;
@@ -80,6 +100,27 @@ a {
     text-align: center;
     flex-shrink: 0;
     white-space: nowrap;
+}
+
+.submit-button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    color: white;
+    background-color: #040404;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.75em 0.75em 0.75em 0.75em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    align-self: baseline;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
 }
 
 .link-centered-button {
@@ -380,11 +421,11 @@ p {
 }
 
 .all-projects {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 3em;
 }
 
 .feature-container {
@@ -565,6 +606,22 @@ p {
 .reg-subpage-section {
     padding-top: 5em;
     padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-and-form {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .reg-subpage-center-section {
@@ -577,6 +634,94 @@ p {
     text-align: center;
     gap: 2em;
 }
+
+.all-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-top: 3em;
+}
+
+.option-container {
+    border: 1px white solid;
+    border-radius: 30px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form-container {
+    border: 1px solid white;
+    padding: 1.5em;
+    border-radius: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+label, legend, button {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+legend {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+textarea {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+input, textarea {
+    padding: 1em;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: #040404;
+    border: 0.5px white solid;
+    border-radius: 20px;
+}
+
+.label-and-text, .label-and-textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.label-and-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.label-and-checkbox {
+    display: flex;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+.info-and-form {
+    display: flex;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -731,7 +876,7 @@ p {
 
     .info-img-container {
         flex-direction: row-reverse;
-        gap:12em;
+        gap:8em;
     }
 
     .img-container img {
@@ -775,6 +920,19 @@ p {
 
     .sub-page-heading {
         margin-top: 7.5em;
+    }
+
+    .option-container a {
+        align-self: baseline;
+    }
+
+    .info-and-form {
+        flex-direction: row;
+        gap: 8em;
+    }
+
+    .form-container {
+        width: 70vw;
     }
 }
 

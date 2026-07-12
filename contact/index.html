@@ -3,11 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Contact | JP Web Studio</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="icon" type="image/svg" href="../svg/jp.svg">
 </head>
 <body>
-    <h1>test</h1>
+    <a class="subpage-skip-link" href="#contact">Skip to content</a>
+        <header class="header-nav-subpage">
+            <a href="../" class="logo-text">jp web studio.</a>
+            <nav>
+                <button class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links-mobile">
+                    <a href="/">home</a>
+                    <a href="/solutions/">solutions</a>
+                    <a href="/portfolio/">portfolio</a>
+                    <a href="/about/">about</a>
+                    <a class="underline" href="/contact/">contact</a>
+                    <a class="link-button-in-nav" href="/contact/">
+                        free quote
+                    </a>
+                </div>
+                <div class="nav-links-desktop">
+                    <a href="/">home</a>
+                    <a href="/solutions/">solutions</a>
+                    <a href="/portfolio/">portfolio</a>
+                    <a href="/about/">about</a>
+                    <a class="underline" href="/contact/">contact</a>
+                    <a class="link-button" href="/contact/">
+                        free quote
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="sub-page-heading" id="contact">
+            <h1>CONTACT</h1>
+        </div>
+        <section class="info-and-form">
+            <div class="contact-info">
+                <h2>LET'S WORK TOGETHER.</h2>
+                <p>Send a message through email or phone, and I'll be in touch with you shortly. For email, I respond within 24 hours. Call today to get started immediately.</p>
+                <p>Phone: (970) 689-8266</p>
+                <p>Email: joey@jpwebstudiollc.com</p>
+            </div>
+            <div class="form-container">
+                <form name="contact" method="POST" data-netlify="true">
+                    <h3>LET'S MEET.</h3>
+                    <div class="label-and-text">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter name here..." required type="text" >
+                    </div>
+                    <div class="label-and-text">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter email here..." required type="text" >
+                    </div>
+                    <div class="label-and-text">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter number here..." required type="text" >
+                    </div>
+                    <div class="label-and-checkboxes">
+                        <legend>What do you wish to talk about?</legend>
+                        <div class="label-and-checkbox">
+                            <input type="checkbox" id="custom-code" name="custom-code" />
+                            <label for="custom-code">I'd like to get a quote for a custom-coded website.</label>
+                        </div>
+                        <div class="label-and-checkbox">
+                            <input type="checkbox" id="builder" name="builder" />
+                            <label for="builder">I'd like to get a quote for a builder website.</label>
+                        </div>
+                        <div class="label-and-checkbox">
+                            <input type="checkbox" id="services" name="services" />
+                            <label for="services">I want to know more about your services.</label>
+                        </div>
+
+                        <div class="label-and-checkbox">
+                            <input type="checkbox" id="other" name="other" />
+                            <label for="other">Other (please explain in message)</label>
+                        </div>
+                    </div>
+                    <div class="label-and-textarea">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Type message here..."></textarea>
+                    </div>
+                    <button class="submit-button" type="submit">
+                        submit
+                    </button>
+                </form>
+            </div>    
+            
+        </section>
+    <footer class="site-footer">
+        <div class="footer-cta">
+            <a href="/" class="logo-text">jp web studio.</a>
+            <p>Crafting web experiences that connect with your people, inspire trust, and drive forward the mission that matters most to you.</p>
+            <a href="/contact/" class="link-button">get started</a>
+        </div>
+        <div class="footer-links">
+            <h2 class="footer-heading">QUICK LINKS</h2>
+            <div class="links-groups">
+                <div class="links-group">
+                    <a href="/">home</a>
+                    <a href="/solutions/">solutions</a>
+                    <a href="/portfolio/">portfolio</a>
+                </div>
+                <div class="links-group">
+                    <a href="/about/">about</a>
+                    <a href="/contact/">contact</a>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="footer-contact-info">
+            <h2 class="footer-heading">CONTACT INFO</h2>
+            <p>Phone: 970-689-8266</p>
+            <p>Email: joey@jpwebstudiollc.com</p>
+        </div> 
+    </footer>
+    <!-- <h1>WEBSITES BUILT WITH PURPOSE</h1> -->
+    <!-- plz deploy -->
+    <script src="../js/nav.js" defer></script>
 </body>
 </html>
