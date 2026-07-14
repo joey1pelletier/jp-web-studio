@@ -193,7 +193,7 @@ li {
 }
 
 .hero-background {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.88) 95%, rgba(0.016, 0.016, 0.016, 1) 100%), url('../images/hero-image.JPG');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.86) 95%, rgba(0.016, 0.016, 0.016, 1) 100%), url('../images/hero-image.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
